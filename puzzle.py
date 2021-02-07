@@ -91,20 +91,20 @@ def validate_board(board: list) -> bool:
 ])
     False
     '''
-    if (check_color(board) and check_vertically(board)
-    and check_horizontally(board)):
+    if (check_color(board) and check_horizontally(board)
+    and check_vertically(board)):
         return True
     return False
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
-    print(validate_board([
- "****2****",
- "***1 ****",
- "**  3****",
- "* 4 1****",
- "     945 ",
- " 6  83  *",
+    print(check_horizontally([
+ "1***2***1",
+ "***16****",
+ "** 23****",
+ "* 431****",
+ "   679458",
+ " 6 18324*",
  "3   5  **",
  "  8  2***",
  "  2  ****"
